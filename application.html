@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud comercial | Nexova Solutions</title>
+    <meta
+      name="description"
+      content="Formulario comercial de Nexova Solutions para empresas interesadas en headhunting, outsourcing de soporte, formación corporativa, automatización con IA y consultoría de talento."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: '#0f172a',
+              slate: '#334155',
+              sand: '#f8fafc',
+              brand: '#0f766e',
+              brandDark: '#115e59',
+              accent: '#f97316',
+              danger: '#b91c1c',
+              success: '#166534'
+            },
+            boxShadow: {
+              soft: '0 24px 80px rgba(15, 23, 42, 0.12)'
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-sand text-ink antialiased">
+    <a
+      href="#contenido-principal"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-white"
+    >
+      Saltar al formulario
+    </a>
+
+    <header class="bg-ink text-white">
+      <nav
+        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8"
+        aria-label="Navegación secundaria"
+      >
+        <div>
+          <p class="text-lg font-semibold tracking-[0.24em] text-slate-100">NEXOVA SOLUTIONS</p>
+          <p class="text-sm text-slate-300">Solicitud comercial para empresas</p>
+        </div>
+        <a
+          href="index.html"
+          class="rounded-full border border-white/15 px-4 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-ink"
+        >
+          Volver a la landing
+        </a>
+      </nav>
+    </header>
+
+    <main id="contenido-principal" class="mx-auto max-w-6xl px-6 py-10 sm:py-14 lg:px-8">
+      <section class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+        <article class="rounded-[2rem] bg-ink p-8 text-white shadow-soft">
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-teal-200">Contacto B2B</p>
+          <h1 class="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">Cuéntanos qué necesita tu empresa y diseñamos la siguiente fase con Nexova.</h1>
+          <p class="mt-6 text-base leading-8 text-slate-200">
+            Este formulario está pensado para compañías que buscan apoyo en selección de talento, outsourcing de soporte, formación corporativa o automatización con IA aplicada a operaciones reales.
+          </p>
+          <div class="mt-8 space-y-4 text-sm leading-7 text-slate-200">
+            <p class="rounded-2xl border border-white/10 bg-white/5 p-4">Headhunting para posiciones críticas y mandos intermedios.</p>
+            <p class="rounded-2xl border border-white/10 bg-white/5 p-4">Equipos de soporte externalizado con necesidad de mejorar visibilidad, SLA y eficiencia.</p>
+            <p class="rounded-2xl border border-white/10 bg-white/5 p-4">Formación corporativa y automatización con IA para reducir tareas manuales y escalar mejor.</p>
+          </div>
+        </article>
+
+        <section class="rounded-[2rem] bg-white p-6 shadow-soft ring-1 ring-slate-200 sm:p-8" aria-labelledby="form-title">
+          <div class="mb-8">
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-brand">Formulario comercial</p>
+            <h2 id="form-title" class="mt-3 text-2xl font-semibold sm:text-3xl">Solicitud de consultoría o inicio de proyecto</h2>
+            <p class="mt-3 text-sm leading-7 text-slate">
+              Completa la información para que el equipo de Nexova entienda el contexto de tu empresa, el servicio prioritario y la urgencia del proyecto.
+            </p>
+          </div>
+
+          <div
+            id="form-success"
+            class="hidden rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-medium text-success"
+            role="status"
+            aria-live="polite"
+          ></div>
+
+          <form id="contact-form" class="mt-8 space-y-8" novalidate>
+            <fieldset class="space-y-5">
+              <legend class="text-lg font-semibold text-ink">Datos de contacto</legend>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="fullName" class="mb-2 block text-sm font-medium text-ink">Nombre completo *</label>
+                  <input id="fullName" name="fullName" type="text" required aria-required="true" aria-describedby="fullName-error" class="field w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" placeholder="Ej. Ana López" />
+                  <p id="fullName-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="company" class="mb-2 block text-sm font-medium text-ink">Empresa *</label>
+                  <input id="company" name="company" type="text" required aria-required="true" aria-describedby="company-error" class="field w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" placeholder="Ej. Finanex" />
+                  <p id="company-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="role" class="mb-2 block text-sm font-medium text-ink">Cargo *</label>
+                  <input id="role" name="role" type="text" required aria-required="true" aria-describedby="role-error" class="field w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" placeholder="Ej. HR Director" />
+                  <p id="role-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="email" class="mb-2 block text-sm font-medium text-ink">Email corporativo *</label>
+                  <input id="email" name="email" type="email" required aria-required="true" aria-describedby="email-error" class="field w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" placeholder="nombre@empresa.com" />
+                  <p id="email-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="phone" class="mb-2 block text-sm font-medium text-ink">Teléfono *</label>
+                  <input id="phone" name="phone" type="tel" required aria-required="true" aria-describedby="phone-error" class="field w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" placeholder="Ej. +34 600 123 456" />
+                  <p id="phone-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="country" class="mb-2 block text-sm font-medium text-ink">País *</label>
+                  <select id="country" name="country" required aria-required="true" aria-describedby="country-error" class="field w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10">
+                    <option value="">Selecciona un país</option>
+                    <option value="España">España</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                  <p id="country-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="space-y-5">
+              <legend class="text-lg font-semibold text-ink">Contexto de la empresa</legend>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="industry" class="mb-2 block text-sm font-medium text-ink">Sector de la empresa *</label>
+                  <select id="industry" name="industry" required aria-required="true" aria-describedby="industry-error" class="field w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10">
+                    <option value="">Selecciona un sector</option>
+                    <option value="Tecnología">Tecnología</option>
+                    <option value="Retail">Retail</option>
+                    <option value="Servicios financieros">Servicios financieros</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                  <p id="industry-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="companySize" class="mb-2 block text-sm font-medium text-ink">Tamaño de la empresa *</label>
+                  <select id="companySize" name="companySize" required aria-required="true" aria-describedby="companySize-error" class="field w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10">
+                    <option value="">Selecciona un rango</option>
+                    <option value="11-50">11 a 50 empleados</option>
+                    <option value="51-200">51 a 200 empleados</option>
+                    <option value="201-500">201 a 500 empleados</option>
+                    <option value="501+">Más de 500 empleados</option>
+                  </select>
+                  <p id="companySize-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="space-y-5">
+              <legend class="text-lg font-semibold text-ink">Necesidad principal</legend>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="service" class="mb-2 block text-sm font-medium text-ink">Servicio requerido *</label>
+                  <select id="service" name="service" required aria-required="true" aria-describedby="service-error" class="field w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10">
+                    <option value="">Selecciona un servicio</option>
+                    <option value="Headhunting">Headhunting</option>
+                    <option value="Outsourcing de soporte al cliente">Outsourcing de soporte al cliente</option>
+                    <option value="Formación corporativa">Formación corporativa</option>
+                    <option value="Automatización con IA">Automatización con IA</option>
+                    <option value="Consultoría de talento">Consultoría de talento</option>
+                  </select>
+                  <p id="service-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="headcount" class="mb-2 block text-sm font-medium text-ink">Número estimado de vacantes o personas implicadas *</label>
+                  <input id="headcount" name="headcount" type="number" min="1" step="1" required aria-required="true" aria-describedby="headcount-error" class="field w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" placeholder="Ej. 12" />
+                  <p id="headcount-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="startDate" class="mb-2 block text-sm font-medium text-ink">Fecha estimada de inicio</label>
+                  <input id="startDate" name="startDate" type="date" aria-describedby="startDate-error" class="field w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" />
+                  <p id="startDate-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+                </div>
+                <div>
+                  <label for="priority" class="mb-2 block text-sm font-medium text-ink">Urgencia aproximada</label>
+                  <select id="priority" name="priority" aria-describedby="priority-help" class="field w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Inmediata">Inmediata</option>
+                    <option value="30 días">En 30 días</option>
+                    <option value="60 días">En 60 días</option>
+                    <option value="Exploratoria">Solo exploratoria</option>
+                  </select>
+                  <p id="priority-help" class="mt-2 text-sm text-slate">Ayuda a dimensionar el ritmo esperado de la propuesta.</p>
+                </div>
+              </div>
+              <div>
+                <label for="message" class="mb-2 block text-sm font-medium text-ink">Mensaje describiendo la necesidad *</label>
+                <textarea id="message" name="message" rows="6" required aria-required="true" aria-describedby="message-error" class="field w-full rounded-[1.5rem] border border-slate-300 px-4 py-3 text-sm leading-7 text-ink outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" placeholder="Describe el contexto: perfiles a cubrir, volumen, problema operativo, equipo implicado o reto de automatización."></textarea>
+                <p id="message-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold text-ink">Privacidad y envío</legend>
+              <div class="rounded-[1.5rem] bg-sand p-4 ring-1 ring-slate-200">
+                <label for="privacy" class="flex items-start gap-3 text-sm leading-7 text-slate">
+                  <input id="privacy" name="privacy" type="checkbox" required aria-required="true" aria-describedby="privacy-error" class="mt-1 h-5 w-5 rounded border-slate-300 text-brand focus:ring-brand" />
+                  <span>Acepto la política de privacidad y autorizo a Nexova Solutions a utilizar esta información para responder a mi solicitud comercial.</span>
+                </label>
+                <p id="privacy-error" class="mt-2 text-sm text-danger" aria-live="polite"></p>
+              </div>
+            </fieldset>
+
+            <div class="flex flex-col gap-4 sm:flex-row">
+              <button type="submit" class="inline-flex items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandDark">
+                Enviar solicitud
+              </button>
+              <button type="reset" id="reset-button" class="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-slate-100">
+                Limpiar formulario
+              </button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <script src="validation.js"></script>
+  </body>
+</html>
